@@ -10,27 +10,42 @@
 extern "C" {
 #endif
 
-#include "lvgl.h"
+    #include "lvgl.h"
 
 #include "ui_helpers.h"
 #include "ui_events.h"
 // SCREEN: ui_scrMain
 void ui_scrMain_screen_init(void);
-extern lv_obj_t * ui_scrMain;
-extern lv_obj_t * ui_pnlMain;
-extern lv_obj_t * ui_lblMilliseconds;
-extern lv_obj_t * ui_lblMillisecondsValue;
-extern lv_obj_t * ui_lblCdr;
-extern lv_obj_t * ui_lblCdrValue;
-void ui_event_btnCount(lv_event_t * e);
-extern lv_obj_t * ui_btnCount;
-extern lv_obj_t * ui_lblButton;
-extern lv_obj_t * ui_lblCount;
-extern lv_obj_t * ui_lblCountValue;
-extern lv_obj_t * ui_Image1;
-extern lv_obj_t * ui____initial_actions0;
+extern lv_obj_t *ui_scrMain;
+extern lv_obj_t *ui_background;
+extern lv_obj_t *ui_links;
+extern lv_obj_t *ui_bsky;
+extern lv_obj_t *ui_masto;
+extern lv_obj_t *ui_twitter;
+extern lv_obj_t *ui_github;
+extern lv_obj_t *ui_youtube;
+extern lv_obj_t *ui_twitch;
+extern lv_obj_t *ui_telegram;
+extern lv_obj_t *ui_discord;
+extern lv_obj_t *ui_fa;
+extern lv_obj_t *ui_avatar;
+extern lv_obj_t *ui_name;
+extern lv_obj_t *ui_username;
+extern lv_obj_t *ui____initial_actions0;
 
-LV_IMG_DECLARE(ui_img_lena80x80_png);    // assets\Lena80x80.png
+LV_IMG_DECLARE( ui_img_ps1_background_png);   // assets/ps1_background.png
+LV_IMG_DECLARE( ui_img_bsky_png);   // assets/bsky.png
+LV_IMG_DECLARE( ui_img_masto_png);   // assets/masto.png
+LV_IMG_DECLARE( ui_img_twitter_png);   // assets/twitter.png
+LV_IMG_DECLARE( ui_img_github_png);   // assets/github.png
+LV_IMG_DECLARE( ui_img_youtube_png);   // assets/youtube.png
+LV_IMG_DECLARE( ui_img_twitch_png);   // assets/twitch.png
+LV_IMG_DECLARE( ui_img_telegram_png);   // assets/telegram.png
+LV_IMG_DECLARE( ui_img_discord_png);   // assets/discord.png
+LV_IMG_DECLARE( ui_img_fa_png);   // assets/fa.png
+LV_IMG_DECLARE( ui_img_protolulu_192_png);   // assets/protolulu_192.png
+LV_IMG_DECLARE( ui_img_username_png);   // assets/username.png
+LV_IMG_DECLARE( ui_img_protolulu_128_png);   // assets/protolulu_128.png
 
 
 

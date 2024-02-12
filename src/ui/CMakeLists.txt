@@ -3,6 +3,18 @@ SET(SOURCES screens/ui_scrMain.c
     components/ui_comp_hook.c
     ui_helpers.c
     ui_events.cpp
-    images/ui_img_lena80x80_png.c)
+    images/ui_img_ps1_background_png.c
+    images/ui_img_bsky_png.c
+    images/ui_img_masto_png.c
+    images/ui_img_twitter_png.c
+    images/ui_img_github_png.c
+    images/ui_img_youtube_png.c
+    images/ui_img_twitch_png.c
+    images/ui_img_telegram_png.c
+    images/ui_img_discord_png.c
+    images/ui_img_fa_png.c
+    images/ui_img_protolulu_192_png.c
+    images/ui_img_username_png.c
+    images/ui_img_protolulu_128_png.c)
 
 add_library(ui ${SOURCES})

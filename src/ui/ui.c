@@ -11,20 +11,23 @@
 
 // SCREEN: ui_scrMain
 void ui_scrMain_screen_init(void);
-lv_obj_t * ui_scrMain;
-lv_obj_t * ui_pnlMain;
-lv_obj_t * ui_lblMilliseconds;
-lv_obj_t * ui_lblMillisecondsValue;
-lv_obj_t * ui_lblCdr;
-lv_obj_t * ui_lblCdrValue;
-void ui_event_btnCount(lv_event_t * e);
-lv_obj_t * ui_btnCount;
-lv_obj_t * ui_lblButton;
-lv_obj_t * ui_lblCount;
-lv_obj_t * ui_lblCountValue;
-lv_obj_t * ui_Image1;
-lv_obj_t * ui____initial_actions0;
-const lv_img_dsc_t * ui_imgset_lenax[1] = {&ui_img_lena80x80_png};
+lv_obj_t *ui_scrMain;
+lv_obj_t *ui_background;
+lv_obj_t *ui_links;
+lv_obj_t *ui_bsky;
+lv_obj_t *ui_masto;
+lv_obj_t *ui_twitter;
+lv_obj_t *ui_github;
+lv_obj_t *ui_youtube;
+lv_obj_t *ui_twitch;
+lv_obj_t *ui_telegram;
+lv_obj_t *ui_discord;
+lv_obj_t *ui_fa;
+lv_obj_t *ui_avatar;
+lv_obj_t *ui_name;
+lv_obj_t *ui_username;
+lv_obj_t *ui____initial_actions0;
+const lv_img_dsc_t *ui_imgset_protolulu_[2] = {&ui_img_protolulu_128_png, &ui_img_protolulu_192_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -37,24 +40,15 @@ const lv_img_dsc_t * ui_imgset_lenax[1] = {&ui_img_lena80x80_png};
 ///////////////////// ANIMATIONS ////////////////////
 
 ///////////////////// FUNCTIONS ////////////////////
-void ui_event_btnCount(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        OnButtonClicked(e);
-    }
-}
 
 ///////////////////// SCREENS ////////////////////
 
-void ui_init(void)
+void ui_init( void )
 {
-    lv_disp_t * dispp = lv_disp_get_default();
-    lv_theme_t * theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
-                                               false, LV_FONT_DEFAULT);
-    lv_disp_set_theme(dispp, theme);
-    ui_scrMain_screen_init();
-    ui____initial_actions0 = lv_obj_create(NULL);
-    lv_disp_load_scr(ui_scrMain);
+lv_disp_t *dispp = lv_disp_get_default();
+lv_theme_t *theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED), false, LV_FONT_DEFAULT);
+lv_disp_set_theme(dispp, theme);
+ui_scrMain_screen_init();
+ui____initial_actions0 = lv_obj_create(NULL);
+lv_disp_load_scr( ui_scrMain);
 }
