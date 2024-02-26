@@ -4,12 +4,7 @@
 #include <esp32_smartdisplay.h>
 #include <ui/ui.h>
 
-void OnButtonClicked(lv_event_t *e)
-{
-    static uint8_t cnt = 0;
-    cnt++;
-    // lv_label_set_text_fmt(ui_lblCountValue, "%d", cnt);
-}
+#define TOUCH_SWAP_XY true
 
 void setup()
 {
@@ -32,10 +27,7 @@ void setup()
     ui_init();
 }
 
-ulong next_millis;
-
 void loop()
 {
-
     lv_timer_handler();
 }

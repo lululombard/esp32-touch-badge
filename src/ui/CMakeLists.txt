@@ -1,20 +1,38 @@
 SET(SOURCES screens/ui_scrMain.c
+    screens/ui_scrSocial0.c
+    screens/ui_scrSocial1.c
+    screens/ui_scrSocial2.c
+    screens/ui_scrSocial3.c
+    screens/ui_scrSocial4.c
+    screens/ui_scrSocial5.c
+    screens/ui_scrSocial6.c
+    screens/ui_scrSocial7.c
+    screens/ui_scrSocial8.c
     ui.c
     components/ui_comp_hook.c
     ui_helpers.c
     ui_events.cpp
     images/ui_img_ps1_background_png.c
-    images/ui_img_bsky_png.c
-    images/ui_img_masto_png.c
-    images/ui_img_twitter_png.c
-    images/ui_img_github_png.c
-    images/ui_img_youtube_png.c
-    images/ui_img_twitch_png.c
-    images/ui_img_telegram_png.c
-    images/ui_img_discord_png.c
-    images/ui_img_fa_png.c
     images/ui_img_protolulu_192_png.c
     images/ui_img_username_png.c
+    images/ui_img_social0_logo_png.c
+    images/ui_img_social1_logo_png.c
+    images/ui_img_social2_logo_png.c
+    images/ui_img_social3_logo_png.c
+    images/ui_img_social4_logo_png.c
+    images/ui_img_social5_logo_png.c
+    images/ui_img_social6_logo_png.c
+    images/ui_img_social7_logo_png.c
+    images/ui_img_social8_logo_png.c
+    images/ui_img_social0_qr_png.c
+    images/ui_img_social1_qr_png.c
+    images/ui_img_social2_qr_png.c
+    images/ui_img_social3_qr_png.c
+    images/ui_img_social4_qr_png.c
+    images/ui_img_social5_qr_png.c
+    images/ui_img_social6_qr_png.c
+    images/ui_img_social7_qr_png.c
+    images/ui_img_social8_qr_png.c
     images/ui_img_protolulu_128_png.c)
 
 add_library(ui ${SOURCES})

@@ -18,33 +18,123 @@ extern "C" {
 void ui_scrMain_screen_init(void);
 extern lv_obj_t *ui_scrMain;
 extern lv_obj_t *ui_background;
-extern lv_obj_t *ui_links;
-extern lv_obj_t *ui_bsky;
-extern lv_obj_t *ui_masto;
-extern lv_obj_t *ui_twitter;
-extern lv_obj_t *ui_github;
-extern lv_obj_t *ui_youtube;
-extern lv_obj_t *ui_twitch;
-extern lv_obj_t *ui_telegram;
-extern lv_obj_t *ui_discord;
-extern lv_obj_t *ui_fa;
 extern lv_obj_t *ui_avatar;
-extern lv_obj_t *ui_name;
+extern lv_obj_t *ui_title;
 extern lv_obj_t *ui_username;
+extern lv_obj_t *ui_socials;
+void ui_event_social0( lv_event_t * e);
+extern lv_obj_t *ui_social0;
+void ui_event_social1( lv_event_t * e);
+extern lv_obj_t *ui_social1;
+void ui_event_social2( lv_event_t * e);
+extern lv_obj_t *ui_social2;
+void ui_event_social3( lv_event_t * e);
+extern lv_obj_t *ui_social3;
+void ui_event_social4( lv_event_t * e);
+extern lv_obj_t *ui_social4;
+void ui_event_social5( lv_event_t * e);
+extern lv_obj_t *ui_social5;
+void ui_event_social6( lv_event_t * e);
+extern lv_obj_t *ui_social6;
+void ui_event_social7( lv_event_t * e);
+extern lv_obj_t *ui_social7;
+void ui_event_social8( lv_event_t * e);
+extern lv_obj_t *ui_social8;
+// SCREEN: ui_scrSocial0
+void ui_scrSocial0_screen_init(void);
+extern lv_obj_t *ui_scrSocial0;
+extern lv_obj_t *ui_socialPanel0;
+extern lv_obj_t *ui_qr0;
+void ui_event_back0( lv_event_t * e);
+extern lv_obj_t *ui_back0;
+extern lv_obj_t *ui_backLabel0;
+// SCREEN: ui_scrSocial1
+void ui_scrSocial1_screen_init(void);
+extern lv_obj_t *ui_scrSocial1;
+extern lv_obj_t *ui_socialPanel1;
+extern lv_obj_t *ui_qr1;
+void ui_event_back1( lv_event_t * e);
+extern lv_obj_t *ui_back1;
+extern lv_obj_t *ui_backLabel1;
+// SCREEN: ui_scrSocial2
+void ui_scrSocial2_screen_init(void);
+extern lv_obj_t *ui_scrSocial2;
+extern lv_obj_t *ui_socialPanel2;
+extern lv_obj_t *ui_qr2;
+void ui_event_back2( lv_event_t * e);
+extern lv_obj_t *ui_back2;
+extern lv_obj_t *ui_backLabel2;
+// SCREEN: ui_scrSocial3
+void ui_scrSocial3_screen_init(void);
+extern lv_obj_t *ui_scrSocial3;
+extern lv_obj_t *ui_socialPanel3;
+extern lv_obj_t *ui_qr3;
+void ui_event_back3( lv_event_t * e);
+extern lv_obj_t *ui_back3;
+extern lv_obj_t *ui_backLabel3;
+// SCREEN: ui_scrSocial4
+void ui_scrSocial4_screen_init(void);
+extern lv_obj_t *ui_scrSocial4;
+extern lv_obj_t *ui_socialPanel4;
+extern lv_obj_t *ui_qr4;
+void ui_event_back4( lv_event_t * e);
+extern lv_obj_t *ui_back4;
+extern lv_obj_t *ui_backLabel4;
+// SCREEN: ui_scrSocial5
+void ui_scrSocial5_screen_init(void);
+extern lv_obj_t *ui_scrSocial5;
+extern lv_obj_t *ui_socialPanel5;
+extern lv_obj_t *ui_qr5;
+void ui_event_back5( lv_event_t * e);
+extern lv_obj_t *ui_back5;
+extern lv_obj_t *ui_backLabel5;
+// SCREEN: ui_scrSocial6
+void ui_scrSocial6_screen_init(void);
+extern lv_obj_t *ui_scrSocial6;
+extern lv_obj_t *ui_socialPanel6;
+extern lv_obj_t *ui_qr6;
+void ui_event_back6( lv_event_t * e);
+extern lv_obj_t *ui_back6;
+extern lv_obj_t *ui_backLabel6;
+// SCREEN: ui_scrSocial7
+void ui_scrSocial7_screen_init(void);
+extern lv_obj_t *ui_scrSocial7;
+extern lv_obj_t *ui_socialPanel7;
+extern lv_obj_t *ui_qr7;
+void ui_event_back7( lv_event_t * e);
+extern lv_obj_t *ui_back7;
+extern lv_obj_t *ui_backLabel7;
+// SCREEN: ui_scrSocial8
+void ui_scrSocial8_screen_init(void);
+extern lv_obj_t *ui_scrSocial8;
+extern lv_obj_t *ui_socialPanel8;
+extern lv_obj_t *ui_qr8;
+void ui_event_back8( lv_event_t * e);
+extern lv_obj_t *ui_back8;
+extern lv_obj_t *ui_backLabel8;
 extern lv_obj_t *ui____initial_actions0;
 
 LV_IMG_DECLARE( ui_img_ps1_background_png);   // assets/ps1_background.png
-LV_IMG_DECLARE( ui_img_bsky_png);   // assets/bsky.png
-LV_IMG_DECLARE( ui_img_masto_png);   // assets/masto.png
-LV_IMG_DECLARE( ui_img_twitter_png);   // assets/twitter.png
-LV_IMG_DECLARE( ui_img_github_png);   // assets/github.png
-LV_IMG_DECLARE( ui_img_youtube_png);   // assets/youtube.png
-LV_IMG_DECLARE( ui_img_twitch_png);   // assets/twitch.png
-LV_IMG_DECLARE( ui_img_telegram_png);   // assets/telegram.png
-LV_IMG_DECLARE( ui_img_discord_png);   // assets/discord.png
-LV_IMG_DECLARE( ui_img_fa_png);   // assets/fa.png
 LV_IMG_DECLARE( ui_img_protolulu_192_png);   // assets/protolulu_192.png
 LV_IMG_DECLARE( ui_img_username_png);   // assets/username.png
+LV_IMG_DECLARE( ui_img_social0_logo_png);   // assets/social0_logo.png
+LV_IMG_DECLARE( ui_img_social1_logo_png);   // assets/social1_logo.png
+LV_IMG_DECLARE( ui_img_social2_logo_png);   // assets/social2_logo.png
+LV_IMG_DECLARE( ui_img_social3_logo_png);   // assets/social3_logo.png
+LV_IMG_DECLARE( ui_img_social4_logo_png);   // assets/social4_logo.png
+LV_IMG_DECLARE( ui_img_social5_logo_png);   // assets/social5_logo.png
+LV_IMG_DECLARE( ui_img_social6_logo_png);   // assets/social6_logo.png
+LV_IMG_DECLARE( ui_img_social7_logo_png);   // assets/social7_logo.png
+LV_IMG_DECLARE( ui_img_social8_logo_png);   // assets/social8_logo.png
+LV_IMG_DECLARE( ui_img_social0_qr_png);   // assets/social0_qr.png
+LV_IMG_DECLARE( ui_img_social1_qr_png);   // assets/social1_qr.png
+LV_IMG_DECLARE( ui_img_social2_qr_png);   // assets/social2_qr.png
+LV_IMG_DECLARE( ui_img_social3_qr_png);   // assets/social3_qr.png
+LV_IMG_DECLARE( ui_img_social4_qr_png);   // assets/social4_qr.png
+LV_IMG_DECLARE( ui_img_social5_qr_png);   // assets/social5_qr.png
+LV_IMG_DECLARE( ui_img_social6_qr_png);   // assets/social6_qr.png
+LV_IMG_DECLARE( ui_img_social7_qr_png);   // assets/social7_qr.png
+LV_IMG_DECLARE( ui_img_social8_qr_png);   // assets/social8_qr.png
 LV_IMG_DECLARE( ui_img_protolulu_128_png);   // assets/protolulu_128.png
 
 
