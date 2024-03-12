@@ -16,4 +16,4 @@ See [https://github.com/rzeldent/esp32-smartdisplay](https://github.com/rzeldent
 
 All the UI was made with SquareLine.
 
-If the touch display is rotated weirdly, make sure to change `TOUCH_SWAP_XY=false` to `TOUCH_SWAP_XY=true` in `boards/esp32-2432S032C.json`
+If the touch display is rotated weirdly, make sure to change `-DTOUCH_SWAP_XY=true` to `-DTOUCH_SWAP_XY=false` in `platformio.ini`

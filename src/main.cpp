@@ -4,8 +4,6 @@
 #include <esp32_smartdisplay.h>
 #include <ui/ui.h>
 
-#define TOUCH_SWAP_XY true
-
 void setup()
 {
     Serial.begin(115200);
